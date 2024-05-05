@@ -1,5 +1,7 @@
 Hướng dẫn chạy project.
 chạy API đầu tiên xong chạy Client.
+
+
 I. chạy Project API trên .net core 8 (địa chỉ endpoint: https://localhost:7160)
 - mở project bằng file TUTT_API.sln trong thư mục root
 - cấu hình kết nối DB mongodb trong file appsettings.json
