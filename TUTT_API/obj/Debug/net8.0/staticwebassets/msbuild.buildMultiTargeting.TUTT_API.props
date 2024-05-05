@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TUTT_API.props" />
+</Project>

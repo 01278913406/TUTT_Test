@@ -1,0 +1,15 @@
+<section>
+    <form>
+      <input type="text" placeholder="Nhập từ khóa tìm kiếm" (keyup.enter)="onSearch()" [(ngModel)]="searchModel.key" [ngModelOptions]="{standalone: true}" #filter>
+      <button class="primary" type="button" (click)="onSearch()">Tìm kiếm</button>
+    </form>
+  </section>
+  <section class="results">
+    <div *ngFor="let item of dataSource">
+        <section class="listing">
+            <img class="listing-photo" [src]="item.league.logo" alt="{{item.league.name}}">
+            <h2 class="listing-heading">{{ item.league.name }}</h2>
+            <p class="listing-location">{{ item.country.name}}</p>
+        </section>
+    </div>
+  </section>
